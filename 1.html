@@ -11,16 +11,20 @@
 <body>
     <script>
         function giaiPTB1(a, b) {
-            if (a != 0) {
-                document.write("kết quả là x= " + ((-b) / a));
+            let Nghiem;
+            if (a === 0 && b !== 0) {
+                Nghiem = "Phương trình vô nghiệm"
+            } else if (a === 0 && b !== 0) {
+                Nghiem = "Phương trình vô số nghiệm";
+            } else {
+                Nghiem = -b/a;
             }
-            else {
-                document.write("Phương trình vô nghiệm");
-            }
+            return Nghiem;
+        
         }
         giaiPTB1(5, 8)
 
-        
+
     </script>
 </body>
 
