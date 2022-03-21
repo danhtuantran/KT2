@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let NA = prompt("Nhập kí tự nguyên âm cần tìm");
+        let mang = ["aii","b","u",4, 5, 6, 7, 8, 9, 1];
+        function timNguyenAm(arr) {
+            let tim = false;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] == "a" || arr[i] == "o" || arr[i] == "e" || arr[i] == "u" || arr[i] == "i") {
+                    tim = true;
+                }
+            }
+            return tim;
+        }
+        if (timNguyenAm(mang) == false) {
+            document.write("Không có kí tự nguyên âm nào");
+        }
+        else {
+            document.write("Có kí tự nguyên âm");
+        }
+
+    </script>
+</body>
+
+</html>
